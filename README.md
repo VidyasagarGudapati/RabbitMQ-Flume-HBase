@@ -24,6 +24,8 @@ junit.jar
 
 Right click and Run the Class as Java Application.
 
+=======================================================================
+
 Create agent.properties and collector.properties files under $FLUME_HOME/conf
 
 Add HBase Jar to lib dir of $FLUME_HOME.
@@ -34,6 +36,7 @@ flume-ng agent -n agent -c conf -f conf/agent.conf  -Dflume.root.logger=DEBUG,co
 
 flume-ng agent -n collector -c conf -f conf/collector.conf  -Dflume.root.logger=DEBUG,console --conf ./cong/
 
+========================================================================
 
 Here we're Sending data from Sample Java class and Collecting data at flume agent and parsing this data to HBase through flume collector. 
 
