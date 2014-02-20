@@ -1,8 +1,8 @@
 RabbitMQ-Flume-HBase
 ====================
 
-Loading Real-time producing Data to HBase tables from RabbitMQ Server using Flume
-
+Streaming Real-time producing data to Apache HBase tables using Apache Flume and RabbitMQ Server
+================================================================================================
 
 Install RabbitMQ on Ubuntu Machine. You can find this at below link:
 
@@ -33,6 +33,7 @@ And, start both the agent and collector flume files using following commands
 flume-ng agent -n agent -c conf -f conf/agent.conf  -Dflume.root.logger=DEBUG,console --conf ./cong/
 
 flume-ng agent -n collector -c conf -f conf/collector.conf  -Dflume.root.logger=DEBUG,console --conf ./cong/
+
 
 Here we're Sending data from Sample Java class and Collecting data at flume agent and parsing this data to HBase through flume collector. 
 
