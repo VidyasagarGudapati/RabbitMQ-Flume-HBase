@@ -8,6 +8,9 @@ Install RabbitMQ on Ubuntu Machine. You can find this at below link:
 
 https://coderwall.com/p/gbrxka
 
+
+Preparing Java class acts like a Data Producer:
+
 Create a Eclipse Java Project with the class attached. 
 
 Add the following JAR's to BuildPath of Java Project:
@@ -24,6 +27,8 @@ junit.jar
 
 Right click and Run the Class as Java Application.
 
+
+Preparing Flume to collect data and to insert into HBase tables
 =======================================================================
 
 Create agent.properties and collector.properties files under $FLUME_HOME/conf
@@ -36,6 +41,7 @@ flume-ng agent -n agent -c conf -f conf/agent.conf  -Dflume.root.logger=DEBUG,co
 
 flume-ng agent -n collector -c conf -f conf/collector.conf  -Dflume.root.logger=DEBUG,console --conf ./cong/
 
+Description
 ========================================================================
 
 Here we're Sending data from Sample Java class and Collecting data at flume agent and parsing this data to HBase through flume collector. 
