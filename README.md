@@ -9,7 +9,8 @@ Install RabbitMQ on Ubuntu Machine. You can find this at below link:
 https://coderwall.com/p/gbrxka
 
 
-Preparing Java class acts like a Data Producer:
+Preparing Java class acts like a Data Producer
+===============================================================
 
 Create a Eclipse Java Project with the class attached. 
 
